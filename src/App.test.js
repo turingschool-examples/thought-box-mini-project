@@ -11,5 +11,5 @@ it('initial state starts with an empty array', () => {
 it('having 2 thoughts in state should mean there are two thoughtCards', () => {
 });
 
-it('user can add a new thought and its added to state and displayed on the screen', () => {
+it('user can add a new thought which adds it to state and is also displayed on the screen', () => {
 });

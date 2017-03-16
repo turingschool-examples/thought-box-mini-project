@@ -8,7 +8,7 @@ describe('ThoughtList', () => {
   it('has a thoughtList class field', () => {
   });
 
-  it('has a multiple ThoughtCard class field', () => {
+  it('has multiple ThoughtCard class fields', () => {
   });
 
 });
