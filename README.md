@@ -12,18 +12,31 @@ This application was built with `create-react-app`
 
 ### Goals
 
-The application is similar to IdeaBox, just more original.. So the goal of this project is to TDD a react application.
+The goal of this mini-project is to TDD a simple react application from the ground up. At the end of the day you will have a fully tested version of Ideabox.
 
-We will be using Jest and Enyzme to test each component. Start off with the `CreateThought.test.js`
-First just try and get the first test to pass.
+We will be using the testing frameworks `Jest` and `Enyzme` to test each component.  
 
-Then move forward to testing and building:
 
-* `thoughtList.test.js`
-* `thoughtCard.test.js`
+### Get Started  
 
-Finally test App! By now your App component is most likely fully built. This is a great opportunity to fully test integration of your application.
+Start off with the `CreateThought.test.js`. Your first task is to get the first test to pass.  
 
-Extension:
+Once those tests are passing, work through following two files:  
+* `thoughtList.test.js`  
+* `thoughtCard.test.js`  
 
-If you've gotten this far, congrats you rule!! But wait, theres more. Now build out a delete functionality. Start by putting a delete button inside your `ThoughtCard` component. Good Luck!
+Once those are also passing, continue to build out the app, testing each component as you go.  Once your `App` component is completely built, finish by writing a full integration test that verifies that the user flow is fully functional.
+
+**Hint**: A user story would look something like this:
+
+- As a user, when I am on the root page, I should see a form.
+- And I should be able to enter in a title
+- And I should be able to enter in a body
+- And I can click the Submit button
+- And then I should see a new thought with the expected title and body
+
+**Extension:**  
+
+* Add a delete button to your `ThoughtCard` component  
+* Add a edit button to your `ThoughtCard` component  
+* CSS the shit out of it.  
