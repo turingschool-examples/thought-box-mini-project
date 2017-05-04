@@ -6,45 +6,15 @@ import CreateThought from './createThought.js';
 describe('CreateThought', () => {
 
   it.skip('has two input fields', () => {
-    const wrapper = shallow(
-      <CreateThought />
-    );
-
-    expect(wrapper.find('input').length).toEqual(2);
   });
 
   it.skip('fires an onChange event on user input which should update both state & the input field', () => {
-    const wrapper = mount(<CreateThought/>);
-    const input = wrapper.find('input').first();
-    const expectedState = {
-      title: 'abc',
-      body: ''
-    };
-    input.simulate('change', { target: { value: 'abc' } });
-
-    expect(input.node.value).toEqual('abc');
-    expect(wrapper.state()).toEqual(expectedState);
   });
 
   it.skip('fires onChange on second input which should update both state & the input field', () => {
-    const wrapper = mount(<CreateThought/>);
-    const input = wrapper.find('input').last();
-    const expectedState = {
-      title: '',
-      body: 'abc'
-    };
-    input.simulate('change', { target: { value: 'abc' } });
-
-    expect(input.node.value).toEqual('abc');
-    expect(wrapper.state()).toEqual(expectedState);
   });
 
   it.skip('has a submit button', () => {
-    const wrapper = shallow(
-      <CreateThought />
-    );
-
-    expect(wrapper.find('button').length).toEqual(1);
   });
 
   it.skip('fires submitIdea function with the data from state as an argument, and input fields go back to empty strings', () => {
