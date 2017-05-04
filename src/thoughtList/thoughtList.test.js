@@ -5,10 +5,10 @@ import { ThoughtList } from './thoughtList.js';
 
 describe('ThoughtList', () => {
 
-  it('has a thoughtList class field', () => {
+  it.skip('has a thoughtList class field', () => {
   });
 
-  it('has multiple ThoughtCard class fields', () => {
+  it.skip('has multiple ThoughtCard class fields', () => {
   });
 
 });

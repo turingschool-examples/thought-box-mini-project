@@ -8,6 +8,9 @@ describe('CreateThought', () => {
   it.skip('has two input fields', () => {
   });
 
+  it.skip('has a default state containing a body and title both starting with empty string', () => {
+  });
+
   it.skip('fires an onChange event on user input which should update both state & the input field', () => {
   });
 
