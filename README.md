@@ -25,7 +25,7 @@ Once those tests are passing, work through following two files:
 * `thoughtList.test.js`  
 * `thoughtCard.test.js`  
 
-Once those are also passing, continue to build out the app, testing each component as you go.  Once your `App` component is completely built, finish by writing a full integration test that verifies that the user flow is fully functional.
+Once those are also passing, continue to build out the app, testing each component as you go.  Once your `App` component is completely built, finish by writing a full acceptance test that verifies that the user flow is fully functional.
 
 **Hint**: A user story would look something like this:
 
@@ -35,8 +35,8 @@ Once those are also passing, continue to build out the app, testing each compone
 - And I can click the Submit button
 - And then I should see a new thought with the expected title and body
 
-**Extension:**  
+**Then, in a TDD way:**  
 
 * Add a delete button to your `ThoughtCard` component  
-* Add a edit button to your `ThoughtCard` component  
-* CSS the shit out of it.  
+* Add a edit button to your `ThoughtCard` component
+
