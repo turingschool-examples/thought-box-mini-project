@@ -5,10 +5,10 @@ import { ThoughtList } from './thoughtList.js';
 
 describe('ThoughtList', () => {
 
-  it('has a thoughtList class field', () => {
+  it('should match the snapshot with no thoughts', () => {
   });
 
-  it('has multiple ThoughtCard class fields', () => {
+  it('should match the snapshot with thoughts', () => {
   });
 
 });

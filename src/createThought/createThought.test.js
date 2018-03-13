@@ -5,69 +5,47 @@ import CreateThought from './createThought.js';
 
 describe('CreateThought', () => {
 
-  it.skip('has two input fields', () => {
-    const wrapper = shallow(
-      <CreateThought />
-    );
-
-    expect(wrapper.find('input').length).toEqual(2);
+  it.skip('should match the snapshot', () => {
+    const wrapper = shallow(<CreateThought />);
+    expect(wrapper).toMatchSnapshot()
   });
 
-  it.skip('fires an onChange event on user input which should update both state & the input field', () => {
+  it.skip('updates the state of the title field', () => {
     const wrapper = mount(<CreateThought/>);
-    const input = wrapper.find('input').first();
+    const mockEvent = { target: { value: 'abc', name: 'title' } }
     const expectedState = {
       title: 'abc',
       body: ''
     };
-    input.simulate('change', { target: { value: 'abc' } });
-
-    expect(input.node.value).toEqual('abc');
+    wrapper.instance().handleChange(mockEvent)
     expect(wrapper.state()).toEqual(expectedState);
   });
 
-  it.skip('fires onChange on second input which should update both state & the input field', () => {
+  it.skip('updates the state of the body field', () => {
     const wrapper = mount(<CreateThought/>);
-    const input = wrapper.find('input').last();
+    const mockEvent = { target: { value: 'abc', name: 'body' } }
     const expectedState = {
       title: '',
       body: 'abc'
     };
-    input.simulate('change', { target: { value: 'abc' } });
-
-    expect(input.node.value).toEqual('abc');
+    wrapper.instance().handleChange(mockEvent)
     expect(wrapper.state()).toEqual(expectedState);
   });
 
-  it.skip('has a submit button', () => {
-    const wrapper = shallow(
-      <CreateThought />
-    );
-
-    expect(wrapper.find('button').length).toEqual(1);
-  });
-
-  it.skip('fires submitIdea function with the data from state as an argument, and input fields go back to empty strings', () => {
+  it.skip('calls submitIdea prop function with the data from state as an argument, and input fields go back to empty strings', () => {
     const mockedSubmit = jest.fn();
-    const wrapper = mount(
+    const wrapper = shallow(
       <CreateThought createThought={mockedSubmit} />
     );
     const expectedState = {
       title: '',
       body: ''
     };
-    const input = wrapper.find('input').last();
-    input.simulate('change', { target: { value: 'abc' } });
-    wrapper.find('button').simulate('click');
 
-
-    // What input field are we trying to target? What is the action we want to simulate?
-
-    // Find the DOM element you want to click on and click on that thing
-
-    // Expect that the value of the input node equals a string
+    // How do we call handleSubmit?
+    
+    // How do we assert that our mock was called with the
+    // correct params?
   });
-
-
 
 });
