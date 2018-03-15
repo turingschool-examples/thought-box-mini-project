@@ -40,3 +40,6 @@ Once those are also passing, continue to build out the app, testing each compone
 * Add a delete button to your `ThoughtCard` component  
 * Add a edit button to your `ThoughtCard` component
 
+**Also...**
+
+* This is a front-end course, CSS the shit out of your project
