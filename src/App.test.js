@@ -5,6 +5,9 @@ import App from './App';
 it('matches the snapshot', () => {
 });
 
+it('renders a thoughtList with the correct props', () => {
+});
+
 it('initial state is an empty array', () => {
 });
 
