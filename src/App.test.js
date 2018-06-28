@@ -2,10 +2,10 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import App from './App';
 
-it('renders App with className app', () => {
+it('matches the snapshot', () => {
 });
 
-it('initial state starts with an empty array', () => {
+it('initial state is an empty array', () => {
 });
 
 it('having 2 thoughts in state should mean there are two thoughtCards', () => {
