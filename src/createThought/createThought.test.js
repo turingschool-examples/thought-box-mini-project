@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 
-import CreateThought from './createThought.js';
+import CreateThought from './CreateThought.js';
 
 describe('CreateThought', () => {
 

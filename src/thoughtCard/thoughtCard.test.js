@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { ThoughtCard } from './thoughtCard.js';
+import { ThoughtCard } from './ThoughtCard.js';
 
 describe('ThoughtCard', () => {
 

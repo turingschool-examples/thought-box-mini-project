@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 
-import { ThoughtList } from './thoughtList.js';
+import { ThoughtList } from './ThoughtList.js';
 
 describe('ThoughtList', () => {
 
