@@ -32,10 +32,10 @@ describe('CreateThought', () => {
     expect(wrapper.state()).toEqual(expectedState);
   });
 
-  it.skip('calls submitIdea prop function with the data from state as an argument, and input fields go back to empty strings', () => {
-    const mockedSubmit = jest.fn();
+  it.skip('calls createThought prop function with the data from state as an argument, and input fields go back to empty strings', () => {
+    const createThoughtMock = jest.fn();
     const wrapper = shallow(
-      <CreateThought createThought={mockedSubmit} />
+      <CreateThought createThought={createThoughtMock} />
     );
     const expectedState = {
       title: '',
