@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import CreateThought from './CreateThought/CreateThought';
-import { ThoughtList } from './ThoughtList/ThoughtList';
+import CreateThought from './createThought/CreateThought';
+import { ThoughtList } from './thoughtList/ThoughtList';
 
 class App extends Component {
   constructor() {
